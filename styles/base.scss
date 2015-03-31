@@ -7,7 +7,6 @@ $font: "Special Elite", cursive;
 @media screen and (min-width: 320px) {
   body {
     font-family: $font;
-    background: url('/images/notebook.png');
   }
 
   a {
@@ -20,7 +19,69 @@ $font: "Special Elite", cursive;
   }
 
   .left-nav {
-    display: none;
+    background: url('/images/notebook.png');
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    border-right: 1px dashed black;
+    text-align: center;
+    z-index: 0;
+    img {
+      margin: 10% 0 5% 0;
+      border-radius: 100%;
+      width: 85%;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  label[for="nav-trigger"] {
+    position: fixed;
+    margin: 2%;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .nav-trigger:checked + label {
+    left: 251px;
+  }
+
+  .nav-trigger:checked ~ .right-body {
+    left: 251px;
+  }
+
+  .nav-trigger + label, .right-body {
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    transition: left 0.5s;
+  }
+
+   .right-body {
+     background: url('/images/notebook.png');
+     min-width: 100%;
+     min-height: 100%;
+     position: relative;
+     top: 0;
+     bottom: 100%;
+     left: 0;
+     z-index: 1;
+   }
+
+   body {
+     overflow-x: hidden;
    }
 
 
@@ -42,12 +103,6 @@ $font: "Special Elite", cursive;
 /*******************************
 END 320PX MEDIA QUERY
 ********************************/
-
-.right-body {
-  width: 76%;
-  margin-left: 2%;
-  float: right;
-}
 
 /*******************************
 ROLLING TEXT KEYFRAME
@@ -218,8 +273,18 @@ footer p {
 992PX RESPONSIVE MEDIA QUERY
 *******************************/
 @media screen and (min-width: 992px) {
-  .top-nav {
+  body {
+    background: url('/images/notebook.png');
+  }
+
+  input, label {
     display: none;
+  }
+
+  .right-body {
+    width: 76%;
+    margin-left: 2%;
+    float: right;
   }
 
   .left-nav {
@@ -231,17 +296,6 @@ footer p {
     height: 100%;
     border-right: 1px dashed black;
     text-align: center;
-    img {
-      margin: 10% 0 5% 0;
-      border-radius: 100%;
-      width: 85%;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    }
-    a:hover {
-      text-decoration: none;
-    }
   }
 }
 
