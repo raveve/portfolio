@@ -97,7 +97,7 @@
     float: left;
     white-space: nowrap;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 15%; }
   .text-scroll {
@@ -121,8 +121,8 @@
     -moz-animation: move 8s 1s infinite;
     -o-animation: move 8s 1s infinite;
     animation: move 8s 1s infinite;
-    font-size: 20px;
-    letter-spacing: 1px; }
+    font-size: 18px;
+    letter-spacing: .5px; }
   @-moz-keyframes move {
     0% {
       top: 0px; }
@@ -317,7 +317,7 @@ END 460PX MEDIA QUERY
     float: left;
     white-space: nowrap;
     position: relative;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     margin-top: 15%; }
   .text-scroll {
@@ -341,8 +341,8 @@ END 460PX MEDIA QUERY
     -moz-animation: move 8s 1s infinite;
     -o-animation: move 8s 1s infinite;
     animation: move 8s 1s infinite;
-    font-size: 30px;
-    letter-spacing: 2px; }
+    font-size: 28px;
+    letter-spacing: 1px; }
   /*******************************/ }
 
 /*******************************
@@ -422,7 +422,7 @@ END 700PX MEDIA QUERY
     float: left;
     white-space: nowrap;
     position: relative;
-    font-size: 38px;
+    font-size: 36px;
     font-weight: bold;
     margin-top: 18%; }
   .text-scroll {
@@ -446,7 +446,7 @@ END 700PX MEDIA QUERY
     -moz-animation: move 8s 1s infinite;
     -o-animation: move 8s 1s infinite;
     animation: move 8s 1s infinite;
-    font-size: 38px;
+    font-size: 36px;
     letter-spacing: 1px; }
   @-moz-keyframes move {
     0% {
@@ -592,7 +592,7 @@ END 992PX MEDIA QUERY
     float: left;
     white-space: nowrap;
     position: relative;
-    font-size: 45px;
+    font-size: 43px;
     font-weight: bold;
     margin-top: 22%; }
   .text-scroll {
@@ -616,7 +616,7 @@ END 992PX MEDIA QUERY
     -moz-animation: move 8s 1s infinite;
     -o-animation: move 8s 1s infinite;
     animation: move 8s 1s infinite;
-    font-size: 45px;
+    font-size: 43px;
     letter-spacing: 1px; }
   @-moz-keyframes move {
     0% {
