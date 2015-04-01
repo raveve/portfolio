@@ -142,6 +142,25 @@
     80% {
       top: 0px; } }
 
+  @-o-keyframes move {
+    0% {
+      top: 0px; }
+
+    20% {
+      top: -56px; }
+
+    40% {
+      top: -110px; }
+
+    60% {
+      top: -167px; }
+
+    80% {
+      top: -175px; }
+
+    80% {
+      top: 0px; } }
+
   @-webkit-keyframes move {
     0% {
       top: 0px; }
@@ -448,6 +467,25 @@ END 700PX MEDIA QUERY
     80% {
       top: 0px; } }
 
+  @-o-keyframes move {
+    0% {
+      top: 0px; }
+
+    20% {
+      top: -56px; }
+
+    40% {
+      top: -110px; }
+
+    60% {
+      top: -167px; }
+
+    80% {
+      top: -175px; }
+
+    80% {
+      top: 0px; } }
+
   @-webkit-keyframes move {
     0% {
       top: 0px; }
@@ -581,6 +619,25 @@ END 992PX MEDIA QUERY
     font-size: 45px;
     letter-spacing: 1px; }
   @-moz-keyframes move {
+    0% {
+      top: 0px; }
+
+    20% {
+      top: -56px; }
+
+    40% {
+      top: -110px; }
+
+    60% {
+      top: -167px; }
+
+    80% {
+      top: -175px; }
+
+    80% {
+      top: 0px; } }
+
+  @-o-keyframes move {
     0% {
       top: 0px; }
 
