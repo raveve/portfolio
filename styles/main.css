@@ -4,16 +4,13 @@
 @media screen and (min-width: 320px) {
   body {
     font-family: "Special Elite", cursive; }
-
   a {
     color: black;
     text-decoration: none; }
-
   a:hover {
     text-decoration: underline; }
-
   .left-nav {
-    background: url("images/notebook.png");
+    background: url('../images/notebook.png');
     display: block;
     position: fixed;
     top: 0;
@@ -32,41 +29,33 @@
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .left-nav a:hover {
       text-decoration: none; }
-
   .nav-trigger {
     position: absolute;
     clip: rect(0, 0, 0, 0); }
-
   label[for="nav-trigger"] {
     position: fixed;
     margin: 2%;
     z-index: 2;
     cursor: pointer; }
-
   .nav-contact-phone {
     position: fixed;
     margin: 2% 2% 2% .5%;
     z-index: 2; }
-
   .nav-contact-email {
     position: fixed;
     margin: 5% 2% 2% .5%;
     z-index: 2; }
-
   .nav-trigger:checked + label {
     left: 251px; }
-
   .nav-trigger:checked ~ .right-body {
     left: 251px; }
-
   .nav-trigger + label, .right-body {
     -webkit-transition: left 0.5s;
     -moz-transition: left 0.5s;
     -o-transition: left 0.5s;
     transition: left 0.5s; }
-
   .right-body {
-    background: url("images/notebook.png");
+    background: url('../images/notebook.png');
     min-width: 100%;
     min-height: 100%;
     position: relative;
@@ -75,22 +64,18 @@
     left: 0;
     z-index: 1;
     overflow-x: hidden; }
-
   body {
     overflow-x: hidden; }
-
   /*******************************
-  ROTATE TRANSITION
-  ********************************/
+   ROTATE TRANSITION
+   ********************************/
   .rotate {
     display: inline-block; }
-
   .rotate:hover {
     cursor: none;
     -webkit-transform: rotateZ(-30deg);
     -ms-transform: rotateZ(-30deg);
     transform: rotateZ(-30deg); }
-
   /*******************************/
   #top {
     height: 145px;
@@ -104,10 +89,9 @@
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
   /*******************************
-  ROLLING TEXT KEYFRAME
-  ********************************/
+   ROLLING TEXT KEYFRAME
+   ********************************/
   .text-scroll p {
     height: 20px;
     float: left;
@@ -116,21 +100,18 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 15%; }
-
   .text-scroll {
     max-height: 50px;
     max-width: 300px;
     margin: 0 auto;
     padding-left: 2%;
     float: left; }
-
   .scrolling-words {
     overflow: hidden;
     position: relative;
     height: 54px;
     padding-left: 10px;
     margin-top: 13%; }
-
   .scrolling-words p {
     margin: 0 0 30px;
     padding-top: 5px;
@@ -142,20 +123,25 @@
     animation: move 8s 1s infinite;
     font-size: 20px;
     letter-spacing: 1px; }
-
   @-webkit-keyframes move {
     0% {
       top: 0px; }
+
     20% {
       top: -56px; }
+
     40% {
       top: -110px; }
+
     60% {
       top: -167px; }
+
     80% {
       top: -175px; }
+
     80% {
-      top: -0px; } }
+      top: 0px; } }
+
   /*******************************/
   #portfolio {
     margin: 20% 0 15% 10%; }
@@ -174,7 +160,6 @@
       font-weight: bold; }
     #portfolio a {
       float: right; }
-
   #skills {
     margin: 8% 0 15% 10%; }
     #skills section {
@@ -189,14 +174,12 @@
       width: 45%;
       margin-right: 4%;
       display: inline-block; }
-
   #about {
     margin: 8% 0 15% 10%; }
     #about p {
       padding: 0 4% 0 2%; }
     #about a {
       color: #64006D; }
-
   #resume {
     margin: 8% 0 10% 10%; }
     #resume div {
@@ -204,32 +187,28 @@
       margin-left: 5%; }
     #resume ul {
       list-style-type: square; }
-
   .resume-link {
     text-align: center; }
     .resume-link h3 {
       padding: 5%; }
-
   #recommendations {
     margin: 5% 0 15% 10%; }
     #recommendations div {
       padding: 0 4% 0 2%; }
-
   .left-rec {
     width: 90%;
     margin-left: 6%;
     margin-bottom: 5%;
     display: inline-block; }
-
   .right-rec {
     width: 90%;
     margin-left: 6%;
     display: inline-block; }
-
   footer p {
     text-align: center;
     padding: 5%;
     margin: 0; } }
+
 /*******************************
 END 320PX MEDIA QUERY
 ********************************/
@@ -241,6 +220,7 @@ END 320PX MEDIA QUERY
     width: 95%;
     margin: 0 0 0 5%;
     display: inline-block; } }
+
 /*******************************
 END 340PX MEDIA QUERY
 *******************************/
@@ -252,9 +232,9 @@ END 340PX MEDIA QUERY
     width: 90%;
     margin: 0 5% 0 5%;
     display: inline-block; }
-
   .text-scroll {
     margin-left: 10%; } }
+
 /*******************************
 END 380PX MEDIA QUERY
 *******************************/
@@ -264,6 +244,7 @@ END 380PX MEDIA QUERY
 @media screen and (min-width: 460px) {
   .text-scroll {
     margin-left: 20%; } }
+
 /*******************************
 END 460PX MEDIA QUERY
 *******************************/
@@ -282,21 +263,18 @@ END 460PX MEDIA QUERY
     font-size: 30px;
     font-weight: bold;
     margin-top: 15%; }
-
   .text-scroll {
     max-height: 45px;
     max-width: 425px;
     margin: 0 auto;
     padding-left: 2%;
     float: left; }
-
   .scrolling-words {
     overflow: hidden;
     position: relative;
     height: 54px;
     padding-left: 10px;
     margin-top: 13%; }
-
   .scrolling-words p {
     margin: 0 0 30px;
     padding-top: 7px;
@@ -308,8 +286,8 @@ END 460PX MEDIA QUERY
     animation: move 8s 1s infinite;
     font-size: 30px;
     letter-spacing: 2px; }
-
   /*******************************/ }
+
 /*******************************
 END 520PX MEDIA QUERY
 *******************************/
@@ -319,6 +297,7 @@ END 520PX MEDIA QUERY
 @media screen and (min-width: 580px) {
   .text-scroll {
     margin-left: 10%; } }
+
 /*******************************
 END 580PX MEDIA QUERY
 *******************************/
@@ -328,6 +307,7 @@ END 580PX MEDIA QUERY
 @media screen and (min-width: 700px) {
   .text-scroll {
     margin-left: 20%; } }
+
 /*******************************
 END 700PX MEDIA QUERY
 *******************************/
@@ -336,18 +316,15 @@ END 700PX MEDIA QUERY
 *******************************/
 @media screen and (min-width: 992px) {
   body {
-    background: url("images/notebook.png"); }
-
+    background: url('../images/notebook.png'); }
   input, label {
     display: none; }
-
   .right-body {
     background: none;
     min-width: 0;
     width: 76%;
     margin-left: 2%;
     float: right; }
-
   .left-nav {
     display: block;
     position: fixed;
@@ -366,11 +343,9 @@ END 700PX MEDIA QUERY
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .left-nav a:hover {
       text-decoration: none; }
-
   #top, #portfolio, #skills, #about, #resume, #recommendations, footer {
     width: 98%;
     margin-left: 2%; }
-
   #top {
     height: 200px; }
     #top img {
@@ -382,7 +357,6 @@ END 700PX MEDIA QUERY
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
   /*******************************
   ROLLING TEXT KEYFRAME
   ********************************/
@@ -394,21 +368,18 @@ END 700PX MEDIA QUERY
     font-size: 38px;
     font-weight: bold;
     margin-top: 18%; }
-
   .text-scroll {
     max-height: 50px;
     max-width: 500px;
     margin: 0 auto;
     padding-left: 0;
     float: left; }
-
   .scrolling-words {
     overflow: hidden;
     position: relative;
     height: 54px;
     padding-left: 15px;
     margin-top: 19%; }
-
   .scrolling-words p {
     margin: 0 0 30px;
     padding-top: 5px;
@@ -420,20 +391,25 @@ END 700PX MEDIA QUERY
     animation: move 8s 1s infinite;
     font-size: 38px;
     letter-spacing: 1px; }
-
   @-webkit-keyframes move {
     0% {
       top: 0px; }
+
     20% {
       top: -56px; }
+
     40% {
       top: -110px; }
+
     60% {
       top: -167px; }
+
     80% {
       top: -175px; }
+
     80% {
-      top: -0px; } }
+      top: 0px; } }
+
   /*******************************/
   #portfolio {
     margin: 0;
@@ -456,43 +432,37 @@ END 700PX MEDIA QUERY
       font-weight: bold; }
     #portfolio a {
       float: right; }
-
   #skills {
     margin: 0;
     margin-top: 8%; }
     #skills article {
       width: 20%; }
-
   #about {
     margin: 0;
     margin-top: 8%; }
-
   #resume {
     margin: 0;
     margin-top: 8%; }
     #resume div {
       padding: 0 4% 0 2%; }
-
   #recommendations {
     margin: 7% 0 15% 0; }
     #recommendations div {
       padding: 0 4% 0 2%; }
-
   .left-rec {
     width: 40%;
     margin: 0;
     display: inline-block;
     border-right: 1px dashed black; }
-
   .right-rec {
     width: 40%;
     margin: 0;
     display: inline-block;
     text-align: right; }
-
   footer p {
     text-align: right;
     margin: 0 4% 2% 0; } }
+
 /*******************************
 END 992PX MEDIA QUERY
 *******************************/
@@ -511,21 +481,18 @@ END 992PX MEDIA QUERY
     font-size: 45px;
     font-weight: bold;
     margin-top: 22%; }
-
   .text-scroll {
     max-height: 50px;
     max-width: 586px;
     margin: 0 auto;
     padding-left: 0;
     float: left; }
-
   .scrolling-words {
     overflow: hidden;
     position: relative;
     height: 54px;
     padding-left: 15px;
     margin-top: 21%; }
-
   .scrolling-words p {
     margin: 0 0 30px;
     padding-top: 5px;
@@ -537,21 +504,27 @@ END 992PX MEDIA QUERY
     animation: move 8s 1s infinite;
     font-size: 45px;
     letter-spacing: 1px; }
-
   @-webkit-keyframes move {
     0% {
       top: 0px; }
+
     20% {
       top: -56px; }
+
     40% {
       top: -110px; }
+
     60% {
       top: -167px; }
+
     80% {
       top: -175px; }
+
     80% {
-      top: -0px; } }
+      top: 0px; } }
+
   /*******************************/ }
+
 /*******************************
 END 1124PX MEDIA QUERY
 *******************************/
@@ -562,5 +535,3 @@ END 1124PX MEDIA QUERY
   .container {
     max-width: 80%;
     margin: 0 auto; } }
-
-/*# sourceMappingURL=main.css.map */
