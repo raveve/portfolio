@@ -54,6 +54,18 @@ $font: "Special Elite", cursive;
     cursor: pointer;
   }
 
+  .nav-contact-phone {
+    position: fixed;
+    margin: 2% 2% 2% .5%;
+    z-index: 2;
+  }
+
+  .nav-contact-email {
+    position: fixed;
+    margin: 5% 2% 2% .5%;
+    z-index: 2;
+  }
+
   .nav-trigger:checked + label {
     left: 251px;
   }
@@ -78,6 +90,7 @@ $font: "Special Elite", cursive;
      bottom: 100%;
      left: 0;
      z-index: 1;
+     overflow-x: hidden;
    }
 
    body {
@@ -159,21 +172,21 @@ $font: "Special Elite", cursive;
    }
 
    @-webkit-keyframes move {
-     0%  { top:  0px; }
-     20% { top: -56px; }
+     0%  { top:  0px;   }
+     20% { top: -56px;  }
      40% { top: -110px; }
      60% { top: -167px; }
      80% { top: -175px; }
-     80% { top: -0px; }
+     80% { top: -0px;   }
    }
 
    /*******************************/
 
    #portfolio {
-     margin: 25% 0 15% 10%;
+     margin: 20% 0 15% 10%;
      div {
-       width: 89%;
-       margin:0 2% 0 10%;
+       width: 100%;
+       margin: 0;
        display: inline-block;
      }
      img {
@@ -224,7 +237,7 @@ $font: "Special Elite", cursive;
    }
 
    #resume {
-     margin: 8% 0 15% 10%;
+     margin: 8% 0 10% 10%;
      div {
        width: 90%;
        margin-left: 5%;
@@ -242,7 +255,7 @@ $font: "Special Elite", cursive;
    }
 
    #recommendations {
-     margin: 8% 0 15% 10%;
+     margin: 5% 0 15% 10%;
      div {
        padding: 0 4% 0 2%;
      }
@@ -266,12 +279,140 @@ $font: "Special Elite", cursive;
        text-align: center;
        padding: 5%;
        margin: 0;
-   }
+     }
    }
 }
 /*******************************
 END 320PX MEDIA QUERY
 ********************************/
+
+/*******************************
+340PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 340px) {
+  #portfolio {
+    div {
+      width: 95%;
+      margin: 0 0 0 5%;
+      display: inline-block;
+    }
+  }
+}
+/*******************************
+END 340PX MEDIA QUERY
+*******************************/
+
+/*******************************
+380PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 380px) {
+  #portfolio {
+    div {
+      width: 90%;
+      margin: 0 5% 0 5%;
+      display: inline-block;
+    }
+  }
+
+  .text-scroll {
+    margin-left: 10%;
+  }
+}
+/*******************************
+END 380PX MEDIA QUERY
+*******************************/
+
+/*******************************
+460PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 460px) {
+  .text-scroll {
+    margin-left: 20%;
+  }
+}
+/*******************************
+END 460PX MEDIA QUERY
+*******************************/
+
+/*******************************
+520PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 520px) {
+
+  /*******************************
+  ROLLING TEXT KEYFRAME
+  ********************************/
+
+  .text-scroll p {
+    height: 20px;
+    float: left;
+    white-space: nowrap;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15%;
+  }
+
+  .text-scroll {
+    max-height: 45px;
+    max-width: 425px;
+    margin: 0 auto;
+    padding-left: 2%;
+    float: left;
+  }
+
+  .scrolling-words {
+    overflow: hidden;
+    position: relative;
+    height: 54px;
+    padding-left: 10px;
+    margin-top: 13%;
+  }
+
+  .scrolling-words  p {
+    margin: 0 0 30px;
+    padding-top: 7px;
+    position: relative;
+    white-space: nowrap;
+    -webkit-animation: move 8s 1s infinite;
+    -moz-animation: move 8s 1s infinite;
+    -o-animation: move 8s 1s infinite;
+    animation: move 8s 1s infinite;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  /*******************************/
+
+}
+/*******************************
+END 520PX MEDIA QUERY
+*******************************/
+
+/*******************************
+580PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 580px) {
+  .text-scroll {
+    margin-left: 10%;
+  }
+}
+/*******************************
+END 580PX MEDIA QUERY
+*******************************/
+
+/*******************************
+700PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 700px) {
+  .text-scroll {
+    margin-left: 20%;
+  }
+}
+/*******************************
+END 700PX MEDIA QUERY
+*******************************/
+
 
 /*******************************
 992PX RESPONSIVE MEDIA QUERY
@@ -321,13 +462,13 @@ END 320PX MEDIA QUERY
   }
 
   #top {
-    height: 150px;
+    height: 200px;
     img {
       border-radius: 10px;
       width: 25%;
       display: block;
       float: right;
-      margin: 5% 4% 2% 2%;
+      margin: 0 4% 0% 1%;
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -343,16 +484,153 @@ END 320PX MEDIA QUERY
     float: left;
     white-space: nowrap;
     position: relative;
-    font-size: 50px;
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 18%;
+  }
+
+  .text-scroll {
+    max-height: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 0;
+    float: left;
+  }
+
+  .scrolling-words {
+    overflow: hidden;
+    position: relative;
+    height: 54px;
+    padding-left: 15px;
+    margin-top: 19%;
+  }
+
+  .scrolling-words  p {
+    margin: 0 0 30px;
+    padding-top: 5px;
+    position: relative;
+    white-space: nowrap;
+    -webkit-animation: move 8s 1s infinite;
+    -moz-animation: move 8s 1s infinite;
+    -o-animation: move 8s 1s infinite;
+    animation: move 8s 1s infinite;
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+
+  @-webkit-keyframes move {
+    0%  { top:  0px;   }
+    20% { top: -56px;  }
+    40% { top: -110px; }
+    60% { top: -167px; }
+    80% { top: -175px; }
+    80% { top: -0px;   }
+  }
+
+  /*******************************/
+
+  #portfolio {
+    margin: 0;
+    margin-top: 20%;
+    div {
+      width: 45%;
+      margin: 0;
+      margin-right: 4%;
+      display: inline-block;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 5%;
+      border-radius: 10px;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    .port-top {
+      margin-bottom: 5%;
+    }
+    h3 {
+      font-weight: bold;
+    }
+    a {
+      float: right;
+    }
+  }
+
+  #skills {
+    margin: 0;
+    margin-top: 8%;
+    article {
+      width: 20%;
+    }
+  }
+
+  #about {
+    margin: 0;
+    margin-top: 8%;
+  }
+
+  #resume {
+    margin: 0;
+    margin-top: 8%;
+    div {
+      padding: 0 4% 0 2%;
+    }
+  }
+
+  #recommendations {
+    margin: 7% 0 15% 0;
+    div {
+      padding: 0 4% 0 2%;
+    }
+  }
+
+  .left-rec {
+    width: 40%;
+    margin: 0;
+    display: inline-block;
+    border-right: 1px dashed black;
+  }
+
+  .right-rec {
+    width: 40%;
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+  }
+
+  footer p {
+    text-align: right;
+    margin: 0 4% 2% 0;
+  }
+}
+/*******************************
+END 992PX MEDIA QUERY
+*******************************/
+
+/*******************************
+1124PX RESPONSIVE MEDIA QUERY
+*******************************/
+@media screen and (min-width: 1124px) {
+  /*******************************
+  ROLLING TEXT KEYFRAME
+  ********************************/
+
+  .text-scroll p {
+    height: 20px;
+    float: left;
+    white-space: nowrap;
+    position: relative;
+    font-size: 45px;
     font-weight: bold;
     margin-top: 22%;
   }
 
   .text-scroll {
     max-height: 50px;
-    max-width: 675px;
+    max-width: 586px;
     margin: 0 auto;
-    padding-left: 2%;
+    padding-left: 0;
     float: left;
   }
 
@@ -373,93 +651,24 @@ END 320PX MEDIA QUERY
     -moz-animation: move 8s 1s infinite;
     -o-animation: move 8s 1s infinite;
     animation: move 8s 1s infinite;
-    font-size: 50px;
-    letter-spacing: 2px;
+    font-size: 45px;
+    letter-spacing: 1px;
   }
 
   @-webkit-keyframes move {
-    0%  { top:  0px; }
-    20% { top: -56px; }
+    0%  { top:  0px;   }
+    20% { top: -56px;  }
     40% { top: -110px; }
     60% { top: -167px; }
     80% { top: -175px; }
-    80% { top: -0px; }
+    80% { top: -0px;   }
   }
 
   /*******************************/
-
-  #portfolio {
-    margin-top: 25%;
-    div {
-      width: 45%;
-      margin-right: 4%;
-      display: inline-block;
-    }
-    img {
-      width: 100%;
-      margin-bottom: 5%;
-      border-radius: 10px;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    }
-    h3 {
-      font-weight: bold;
-    }
-    a {
-      float: right;
-    }
-  }
-
-  .port-top {
-    margin-bottom: 3%;
-  }
-
-  #skills {
-    margin-top: 8%;
-    article {
-      width: 20%;
-    }
-  }
-
-  #about {
-    margin-top: 8%;
-  }
-
-  #resume {
-    margin-top: 8%;
-    div {
-      padding: 0 4% 0 2%;
-    }
-  }
-
-  #recommendations {
-    margin-top: 8%;
-    margin-bottom: 15%;
-    div {
-      padding: 0 4% 0 2%;
-    }
-  }
-
-  .left-rec {
-    width: 40%;
-    display: inline-block;
-    border-right: 1px dashed black;
-  }
-
-  .right-rec {
-    width: 40%;
-    display: inline-block;
-    text-align: right;
-  }
-
-  footer p {
-    text-align: right;
-    margin: 0 4% 2% 0;
-  }
-
-
 }
+/*******************************
+END 1124PX MEDIA QUERY
+*******************************/
 
 /*******************************
 1500PX RESPONSIVE MEDIA QUERY
