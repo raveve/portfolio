@@ -232,13 +232,14 @@
       width: 45%;
       margin-right: 4%;
       display: inline-block; }
-    #skills .devicons:hover {
-      cursor: none;
-      color: #311C3B;
+    #skills .devicons {
       -moz-transition: all 1s ease;
       -webkit-transition: all 1s ease;
       -ms-transition: all 1s ease;
-      transition: all 1s ease;
+      transition: all 1s ease; }
+    #skills .devicons:hover {
+      cursor: none;
+      color: #311C3B;
       -moz-transform: rotate(360deg);
       -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
