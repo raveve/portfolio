@@ -46,7 +46,7 @@
     position: fixed;
     margin: 5% 2% 2% .5%;
     z-index: 2; }
-  .nav-trigger i:hover, .nav-contact-phone a:hover, .nav-contact-email a:hover {
+  .nav-contact-phone a:hover, .nav-contact-email a:hover {
     color: #311C3B; }
   .nav-trigger:checked + label {
     left: 251px; }
