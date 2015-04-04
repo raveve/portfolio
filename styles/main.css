@@ -619,7 +619,8 @@ END 700PX MEDIA QUERY
       width: 45%;
       margin: 0;
       margin-right: 4%;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle; }
     #portfolio img {
       width: 100%;
       margin-bottom: 5%;
