@@ -152,7 +152,6 @@ $font: "Special Elite", cursive;
 
    .scrolling-words {
      overflow: hidden;
-     position: relative;
      height: 54px;
      padding-left: 10px;
      margin-top: 13%;
@@ -161,50 +160,49 @@ $font: "Special Elite", cursive;
    .scrolling-words  p {
      margin: 0 0 30px;
      padding-top: 5px;
-     position: relative;
      white-space: nowrap;
-     -webkit-animation: move 8s 1s infinite;
-     -moz-animation: move 8s 1s infinite;
-     -o-animation: move 8s 1s infinite;
-     animation: move 8s 1s infinite;
+      -webkit-animation: move 8s 1s infinite;
+      -moz-animation: move 8s 1s infinite;
+      -o-animation: move 8s 1s infinite;
+      animation: move 8s 1s infinite;
      font-size: 18px;
      letter-spacing: .5px;
    }
 
    @-moz-keyframes move {
      0%  { top:  0px;   }
-     20% { top: -56px;  }
-     40% { top: -110px; }
-     60% { top: -167px; }
-     80% { top: -175px; }
+     20% { top: -53px;  }
+     40% { top: -112px; }
+     60% { top: -168px; }
      80% { top: -0px;   }
+     100% { top: -0px;  }
    }
 
    @-o-keyframes move {
      0%  { top:  0px;   }
-     20% { top: -56px;  }
-     40% { top: -110px; }
-     60% { top: -167px; }
-     80% { top: -175px; }
+     20% { top: -53px;  }
+     40% { top: -112px; }
+     60% { top: -168px; }
      80% { top: -0px;   }
+     100% { top: -0px;  }
    }
 
    @-webkit-keyframes move {
      0%  { top:  0px;   }
-     20% { top: -56px;  }
-     40% { top: -110px; }
-     60% { top: -167px; }
-     80% { top: -175px; }
+     20% { top: -53px;  }
+     40% { top: -112px; }
+     60% { top: -168px; }
      80% { top: -0px;   }
+     100% { top: -0px;  }
    }
 
    @keyframes move {
      0%  { top:  0px;   }
-     20% { top: -56px;  }
-     40% { top: -110px; }
-     60% { top: -167px; }
-     80% { top: -175px; }
+     20% { top: -53px;  }
+     40% { top: -112px; }
+     60% { top: -168px; }
      80% { top: -0px;   }
+     100% { top: -0px;  }
    }
 
    /*******************************/
@@ -409,8 +407,42 @@ END 460PX MEDIA QUERY
     letter-spacing: 1px;
   }
 
-  /*******************************/
+  @-moz-keyframes move {
+    0%  { top:  0px;   }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -168px; }
+    80% { top: -0px;   }
+    100% { top: -0px;  }
+  }
 
+  @-o-keyframes move {
+    0%  { top:  0px;   }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -168px; }
+    80% { top: -0px;   }
+    100% { top: -0px;  }
+  }
+
+  @-webkit-keyframes move {
+    0%  { top:  0px;   }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -168px; }
+    80% { top: -0px;   }
+    100% { top: -0px;  }
+  }
+
+  @keyframes move {
+    0%  { top:  0px;   }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -168px; }
+    80% { top: -0px;   }
+    100% { top: -0px;  }
+  }
+  /*******************************/
 }
 /*******************************
 END 520PX MEDIA QUERY
@@ -526,16 +558,14 @@ END 700PX MEDIA QUERY
 
   .scrolling-words {
     overflow: hidden;
-    position: relative;
     height: 54px;
     padding-left: 15px;
-    margin-top: 19%;
+    margin-top: 17%;
   }
 
   .scrolling-words  p {
     margin: 0 0 30px;
     padding-top: 5px;
-    position: relative;
     white-space: nowrap;
     -webkit-animation: move 8s 1s infinite;
     -moz-animation: move 8s 1s infinite;
@@ -547,40 +577,39 @@ END 700PX MEDIA QUERY
 
   @-moz-keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
 
   @-o-keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
 
   @-webkit-keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
 
   @keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
-
   /*******************************/
 
   #portfolio {
@@ -690,7 +719,6 @@ END 992PX MEDIA QUERY
 
   .scrolling-words {
     overflow: hidden;
-    position: relative;
     height: 54px;
     padding-left: 15px;
     margin-top: 21%;
@@ -699,7 +727,6 @@ END 992PX MEDIA QUERY
   .scrolling-words  p {
     margin: 0 0 30px;
     padding-top: 5px;
-    position: relative;
     white-space: nowrap;
     -webkit-animation: move 8s 1s infinite;
     -moz-animation: move 8s 1s infinite;
@@ -711,40 +738,39 @@ END 992PX MEDIA QUERY
 
   @-moz-keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
 
   @-o-keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
 
   @-webkit-keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
 
   @keyframes move {
     0%  { top:  0px;   }
-    20% { top: -56px;  }
-    40% { top: -110px; }
-    60% { top: -167px; }
-    80% { top: -175px; }
+    20% { top: -53px;  }
+    40% { top: -109px; }
+    60% { top: -164px; }
     80% { top: -0px;   }
+    100% { top: -0px;  }
   }
-
   /*******************************/
 }
 /*******************************
