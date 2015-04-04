@@ -28,7 +28,8 @@
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
     .left-nav a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #311C3B; }
   .nav-trigger {
     position: absolute;
     clip: rect(0, 0, 0, 0); }
@@ -108,14 +109,12 @@
     float: left; }
   .scrolling-words {
     overflow: hidden;
-    position: relative;
     height: 54px;
     padding-left: 10px;
     margin-top: 13%; }
   .scrolling-words p {
     margin: 0 0 30px;
     padding-top: 5px;
-    position: relative;
     white-space: nowrap;
     -webkit-animation: move 8s 1s infinite;
     -moz-animation: move 8s 1s infinite;
