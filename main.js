@@ -13,8 +13,6 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 });
 
-jQuery(document).ready(function() {
-$("#recommendations").on("mouseenter", function(){
-  $("p").slideDown(1000);
-});
-});
+// jQuery(document).ready(function() {
+//
+// });
