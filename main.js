@@ -12,7 +12,3 @@ $('a[href*=#]:not([href=#])').click(function() {
   }
 });
 });
-
-// jQuery(document).ready(function() {
-//
-// });
