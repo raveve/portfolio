@@ -63,7 +63,7 @@ $font: "Special Elite", cursive;
 
   .nav-contact-email {
     position: fixed;
-    margin: 5% 2% 2% .5%;
+    margin: 7% 2% 2% .5%;
     z-index: 2;
   }
 
@@ -665,6 +665,9 @@ END 700PX MEDIA QUERY
     margin-top: 8%;
     article {
       width: 20%;
+      h3 {
+        text-align: center;
+      }
     }
   }
 
