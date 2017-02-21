@@ -257,6 +257,8 @@
       margin-left: 5%; }
     #resume ul {
       list-style-type: square; }
+    #resume li a {
+      color: #64006D; }
 
   .resume-link {
     text-align: center; }
@@ -266,7 +268,11 @@
   #recommendations {
     margin: 5% 0 15% 10%; }
     #recommendations div {
-      padding: 0 4% 0 2%; }
+      padding: 0 4% 0 2%;
+      margin-top: 35px; }
+    #recommendations .rec-name {
+      color: #64006D;
+      font-weight: bold; }
 
   .left-rec {
     width: 90%;
