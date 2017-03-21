@@ -274,17 +274,6 @@
       color: #64006D;
       font-weight: bold; }
 
-  .left-rec {
-    width: 90%;
-    margin-left: 6%;
-    margin-bottom: 5%;
-    display: inline-block; }
-
-  .right-rec {
-    width: 90%;
-    margin-left: 6%;
-    display: inline-block; }
-
   footer p {
     text-align: center;
     padding: 5%;
@@ -591,7 +580,7 @@ END 700PX MEDIA QUERY
       margin: 0;
       margin-right: 4%;
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: top; }
     #portfolio img {
       width: 100%;
       margin-bottom: 5%;
